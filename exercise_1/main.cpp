@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <unordered_set>
 
 using namespace std;
 
@@ -56,8 +57,26 @@ void sort_and_split(){
 
 }
 
+/**
+ * @brief Solve the task using hashtables in O(n)
+ */
+void optimal_hashing(){
+  unordered_set<int> numberOccured;
+  for(int& element : myarray){
+    int required_num = sum - element;
+    if(numberOccured.find(required_num) != numberOccured.end()){
+      cout << "Solution found: " << element << " + " << required_num <<  " = " << sum << endl;
+      return;
+    }
+    numberOccured.insert(element);
+  }
+
+  cout << "No solution found" << endl;
+}
+
+
 int main(int argc, char* argv[]){
   naive_method();
   sort_and_split();
-
+  optimal_hashing();
 }

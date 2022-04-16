@@ -13,5 +13,5 @@ The optimal solution is to use a hash table. The hash table has an access/search
 The hash table is modeled here with an unordered set. The unordered set explicitly contains an implementation of a hash table.
 
 ##Good questions to ask
-- Can a number occur twice in the input array?
-- Are 0 and negative numbers allowed in the array.
+- Can a number occur multiple times in the input array?
+- Are 0 and negative numbers allowed in the array?

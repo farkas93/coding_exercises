@@ -1,6 +1,5 @@
 # Exercise 2
-Move all zeros to the left of an array while maintaining its order.
+You are given the head of a linked list and a key. You have to delete the node that contains this given key.
 
 ## Good questions to ask:
-- Are we limited in memory? Does memory complexity matter ?
-- Is there a way to do it in place and without a deque?
+- What if we want the key to any generic type? 

@@ -1,4 +1,4 @@
-# Exercise 2
+# Exercise 3
 You are given the head of a linked list and a key. You have to delete the node that contains this given key.
 
 ## Good questions to ask:

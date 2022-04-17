@@ -37,8 +37,8 @@ void print_list(LinkedListNode<T>* head, string name){
 }
 
 /**
- * @brief 
- * 
+ * @brief Creating a deep copy of the linked list by using an unordered map (hashtable). 
+ * Runtime Complexity: O(n)
  * @tparam T Generic Type T
  * @param head Pointer to the head node
  */
@@ -64,7 +64,7 @@ LinkedListNode<T>* deep_cpy(LinkedListNode<T>* head){
     else break;
     
   }
-  
+
   it_new = new_head;
   while(it_new != nullptr){
     it_new->arbitrary_ptr = map[it_new->arbitrary_ptr];

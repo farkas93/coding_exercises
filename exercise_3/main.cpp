@@ -51,6 +51,12 @@ LinkedListNode<T>* delete_element(LinkedListNode<T>* head, T key){
   return head;  
 }
 
+/**
+ * @brief Print the linked list
+ * 
+ * @tparam T 
+ * @param head the head of the linked list.
+ */
 template<class T>
 void print_list(LinkedListNode<T>* head){
   cout << "List keys: { ";
